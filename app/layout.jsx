@@ -1,5 +1,6 @@
-import { Reddit_Sans } from "next/font/google";
+import { Reddit_Sans, Roboto } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/common/Footer";
 
 const redditSans = Reddit_Sans({
   variable: "--font-reddit-sans",
@@ -15,9 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${redditSans.variable} antialiased`}
+        className={` ${redditSans.variable} font-reddit-sans`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

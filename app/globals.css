@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    .content{
+        @apply max-w-[1485px] mx-auto md:w-11/12 w-full px-4;
+    }
+}
+
+.font-reddit-sans{
+    font-family: var(--font-reddit-sans);
+}
