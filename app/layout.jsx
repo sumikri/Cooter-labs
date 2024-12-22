@@ -1,6 +1,7 @@
 import { Reddit_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/common/Footer";
+import Navbar from "@/components/common/Navbar";
 
 const redditSans = Reddit_Sans({
   variable: "--font-reddit-sans",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={` ${redditSans.variable} font-reddit-sans`}
       >
+        <Navbar />
         {children}
         <Footer />
       </body>

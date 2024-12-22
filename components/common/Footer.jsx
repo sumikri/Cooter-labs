@@ -59,7 +59,7 @@ const Footer = () => {
                             {
                                 FooterLinks.map(({ title, link }) => (
                                     <>
-                                        <button className="text-mobile/button md:text-tablet/button lg:text-desktop/button text-t3 flex  items-center gap-0.5">
+                                        <button key={title} className="text-mobile/button md:text-tablet/button lg:text-desktop/button text-t3 flex  items-center gap-0.5">
                                             <span className="capitalize">
                                                 {title}
                                             </span>
